@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Retrofit_Post</string>
+    <string name="error">Error</string>
+    <string name="yes">SÍ</string>
+    <string name="no">NO</string>
+    <string name="delete">¿Desea borrar este post?</string>
+</resources>

@@ -4,4 +4,10 @@
     <string name="yes">SÍ</string>
     <string name="no">NO</string>
     <string name="delete">¿Desea borrar este post?</string>
+    <string name="user">Usuario</string>
+    <string name="title">Título</string>
+    <string name="body">Mensaje</string>
+    <string name="hint">Escribe aquí</string>
+    <string name="save">Guardar</string>
+
 </resources>

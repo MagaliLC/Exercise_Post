@@ -6,6 +6,8 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -138,6 +140,28 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
+    }
+    @Override
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.addPost:
+                toForm();
+                return (true);
+        }
+        return (super.onOptionsItemSelected(item));
+    }
+
+    private void toForm() {
+        Intent intent = new Intent(MainActivity.this, FormActivity.class);
+        startActivity(intent);
     }
 
 }

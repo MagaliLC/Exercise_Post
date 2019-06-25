@@ -1,6 +1,7 @@
 package com.example.retrofit_post.Retrofit;
 
 import com.example.retrofit_post.Model.Post;
+import com.example.retrofit_post.Model.User;
 
 import java.util.List;
 
@@ -15,12 +16,13 @@ public interface MyService {
     @GET("posts/")
     Call<List<Post>> postList();
 
-    @GET("users/{post_id}")
+    @GET("posts/{post_id}")
     Call<Post> getPost(@Path("post_id") int post_id);
 
-    @DELETE("users/{post_id}")
+    @DELETE("posts/{post_id}")
     Call<Void> deletePost(@Path("post_id") int post_id);
 
     @POST("posts/")
     Call<Post> savePost(@Body Post post);
+
 }

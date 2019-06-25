@@ -56,7 +56,9 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private void loadPost(Post p) {
-       //DUDA
-
+        tv_name.setText(String.valueOf(p.getUserId()));
+        tv_email.setText(p.getTitle());
+        tv_address.setText(p.getBody());
     }
+
 }
